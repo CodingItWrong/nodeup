@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
+
+mkdir $1
+cd $1
+git init .
+
+npx gitignore node
+git add .
+git commit -m "Ignore node files"
+
+yarn init -y
+git add .
+git commit -m "Create package.json"
+
+echo "package-lock=false" >> .npmrc
+git add .
+git commit -m "Prevent package lock"
+
+yarn add --dev jest
+git add .
+git commit -m "Add Jest"
+
+yarn add --dev eslint eslint-config-prettier eslint-plugin-prettier prettier
+cp "${DIR}/template/.prettierrc.js" .prettierrc.js
+cp "${DIR}/template/.eslintrc.js" .eslintrc.js
+git add .
+git commit -m "Add ESLint and Prettier"
