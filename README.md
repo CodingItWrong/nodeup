@@ -18,6 +18,18 @@ Add `nodeup/bin` to your `PATH`.
 # nodeup my-new-app-name
 ```
 
+## Manual Configuration
+
+The following steps are not yet automated, and need to be done after running the script:
+
+- Add a `test` npm script:
+
+```json
+"scripts": {
+  "test": "jest"
+}
+```
+
 ## License
 
 Apache-2.0
