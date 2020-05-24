@@ -27,3 +27,7 @@ cp "${DIR}/template/.prettierrc.js" .prettierrc.js
 cp "${DIR}/template/.eslintrc.js" .eslintrc.js
 git add .
 git commit -m "Add ESLint and Prettier"
+
+cp -r "${DIR}/template/github" .github
+git add .
+git commit -m "Set up GitHub Actions workflow"

@@ -4,6 +4,7 @@ Script to set up a new Node project with a few important libraries, including:
 
 - **Testing**: [Jest][jest]
 - **Code Standardization:** [ESLint][eslint] and [Prettier][prettier]
+- **CI**: [GitHub Actions](https://www.cypress.io/)
 
 ## Requirements
 
