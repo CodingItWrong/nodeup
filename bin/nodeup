@@ -35,3 +35,7 @@ git commit -m "Add ESLint and Prettier"
 cp -r "${DIR}/template/github" .github
 git add .
 git commit -m "Set up GitHub Actions workflow"
+
+cp "${DIR}/template/README.md" README.md
+git add .
+git commit -m "Add custom readme"
