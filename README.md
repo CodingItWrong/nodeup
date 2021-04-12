@@ -2,9 +2,10 @@
 
 Script to set up a new Node project with a few important libraries, including:
 
-- **Testing**: [Jest][jest]
-- **Code Standardization:** [ESLint][eslint] and [Prettier][prettier]
-- **CI**: [GitHub Actions][github-actions]
+- [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
+- [Husky](https://github.com/typicode/husky) and [Lint-Staged](https://github.com/okonet/lint-staged) for linting staged files upon commit
+- [Jest][jest] for unit testing
+- [GitHub Actions](https://www.cypress.io/) for CI
 
 ## Requirements
 
@@ -29,6 +30,22 @@ The following steps are not yet automated, and need to be done after running the
 "scripts": {
   "test": "jest"
 }
+```
+
+- Add the following at the end of `package.json`:
+
+```diff
+     "source-map-explorer": "^2.4.2"
++  },
++  "husky": {
++    "hooks": {
++      "pre-commit": "lint-staged"
++    }
++  },
++  "lint-staged": {
++    "*.js": "eslint --max-warnings 0"
+   }
+ }
 ```
 
 ## License
