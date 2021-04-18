@@ -19,7 +19,11 @@ git add .
 git commit -m "Prevent package lock"
 
 yarn add --dev jest
+<<<<<<< HEAD
 npm set-script test "jest --watchAll"
+=======
+npm set-script test "jest"
+>>>>>>> 2c1da6b6880040ee7af84e0c1a5d988044a32e85
 git add .
 git commit -m "Add Jest"
 
