@@ -1,30 +1,34 @@
-# node
+# nodeup
 
-Script to set up a new Node project with a few important libraries, including:
+Generates a new Node project with a few important libraries, including:
 
-- [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky) and [Lint-Staged](https://github.com/okonet/lint-staged) for linting staged files upon commit
 - [Jest][jest] for unit testing
-- [GitHub Actions](https://www.cypress.io/) for CI
+- [ESLint][eslint] for linting
+- [Prettier][prettier] for formatting
+- [Husky][husky] and [Lint-Staged][lint-staged] for linting and formatting staged files upon commit
+- [GitHub Actions][github-actions] to run Jest tests on CI
 
 ## Requirements
 
-- Node
-- NPM >= 7.1
+- [Node][node]
+- [NPM][npm] >= 7.1
 - [Yarn][yarn]
 
 ## Usage
 
-Add `nodeup/bin` to your `PATH`.
+Clone the repo and add `nodeup/bin` to your path.
 
 ```
 # nodeup my-new-app-name
 ```
 
+Read the `README.md` added to the project for details on using that project.
+
 ## Manual Configuration
 
-The following steps are not yet automated, and need to be done after running the script:
+The following steps must be done manually after running `nodeup`:
 
+- In `README.md`, replace the title and description with ones that fit your project.
 - Add the following at the end of `package.json`:
 
 ```diff
@@ -46,7 +50,11 @@ The following steps are not yet automated, and need to be done after running the
 Apache-2.0
 
 [eslint]: https://eslint.org/
-[github-actions]: https://github.com/features/actions
 [jest]: https://jestjs.io/
+[github-actions]: https://github.com/features/actions
+[husky]: https://github.com/typicode/husky
+[lint-staged]: https://github.com/okonet/lint-staged
+[node]: https://nodejs.org/
+[npm]: https://npmjs.com
 [prettier]: https://prettier.io/
 [yarn]: https://yarnpkg.com/en/docs/install
