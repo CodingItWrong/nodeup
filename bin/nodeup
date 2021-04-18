@@ -19,6 +19,7 @@ git add .
 git commit -m "Prevent package lock"
 
 yarn add --dev jest
+npm set-script test "jest"
 git add .
 git commit -m "Add Jest"
 

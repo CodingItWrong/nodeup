@@ -10,6 +10,7 @@ Script to set up a new Node project with a few important libraries, including:
 ## Requirements
 
 - Node
+- NPM >= 7.1
 - [Yarn][yarn]
 
 ## Usage
@@ -23,14 +24,6 @@ Add `nodeup/bin` to your `PATH`.
 ## Manual Configuration
 
 The following steps are not yet automated, and need to be done after running the script:
-
-- Add a `test` npm script:
-
-```json
-"scripts": {
-  "test": "jest"
-}
-```
 
 - Add the following at the end of `package.json`:
 
