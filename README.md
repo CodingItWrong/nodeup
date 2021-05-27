@@ -2,17 +2,17 @@
 
 Generates a new Node project with a few important libraries, including:
 
-- [Jest][jest] for unit testing
-- [ESLint][eslint] for linting
-- [Prettier][prettier] for formatting
-- [Husky][husky] and [Lint-Staged][lint-staged] for linting and formatting staged files upon commit
-- [GitHub Actions][github-actions] to run Jest tests on CI
+- [Jest](https://jestjs.io/) for unit testing
+- [ESLint](https://eslint.org/) for linting
+- [Prettier](https://prettier.io/) for formatting
+- [Husky](https://github.com/typicode/husky) and [Lint-Staged](https://github.com/okonet/lint-staged) for linting and formatting staged files upon commit
+- [GitHub Actions](https://github.com/features/actions) to run Jest tests on CI
 
 ## Requirements
 
-- [Node][node]
-- [NPM][npm] >= 7.1
-- [Yarn][yarn]
+- [Node](https://nodejs.org/)
+- [NPM](https://npmjs.com) >= 7.1
+- [Yarn](https://yarnpkg.com/en/docs/install)
 
 ## Usage
 
@@ -48,13 +48,3 @@ The following steps must be done manually after running `nodeup`:
 ## License
 
 Apache-2.0
-
-[eslint]: https://eslint.org/
-[jest]: https://jestjs.io/
-[github-actions]: https://github.com/features/actions
-[husky]: https://github.com/typicode/husky
-[lint-staged]: https://github.com/okonet/lint-staged
-[node]: https://nodejs.org/
-[npm]: https://npmjs.com
-[prettier]: https://prettier.io/
-[yarn]: https://yarnpkg.com/en/docs/install
