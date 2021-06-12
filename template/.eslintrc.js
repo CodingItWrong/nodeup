@@ -9,4 +9,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2017,
   },
+  rules: {
+    quotes: ['error', 'single', {avoidEscape: true}], // single quote unless using interpolation
+  }
 };
