@@ -7,7 +7,7 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 'latest',
   },
   rules: {
     quotes: ['error', 'single', {avoidEscape: true}], // single quote unless using interpolation
